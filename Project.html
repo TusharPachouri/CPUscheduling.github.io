@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <script src="javascript.js"></script>
+    <script src="jquery-3.6.1.js"></script>
+    <link href="css.css" rel="stylesheet">
+</head>
+<body>
+<header id="header">
+    <nav class="links" style="--items: 5;">
+        <h1>CPU SCHEDULING</h1>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">ALGORITHMS</a>
+        <a href="#">CONTACT</a>
+
+        <span class="line"></span>
+    </nav>
+</header>
+<BR><BR><BR><BR><BR><BR>
+<div>
+    <div>
+       <h2 id="Algo">Algorithm:</h2>
+        <form id="algorithm">
+            <input type="radio" name="algorithm" value="fcfs" checked/> FCFS<br/>
+            <input type="radio" name="algorithm" value="sjf"/> SJF<br/>
+
+            <input type="radio" name="algorithm" value="robin"/> Round Robin
+        </form>
+        <br>
+    </div>
+    <table id="inputTable">
+        <tr>
+            <th>Process</th>
+            <th>Arrival Time</th>
+            <th>Execute Time</th>
+            <th class="servtime">Service Time</th>
+
+        </tr>
+        <tr>
+            <td>P0</td>
+            <td>0</td>
+            <td><input class="initial exectime" type="text" value="5" /></td>
+            <td class="servtime"></td>
+
+        </tr>
+        <tr>
+            <td>P1</td>
+            <td>1</td>
+            <td><input class="initial exectime" value="3" /></td>
+            <td class="servtime"></td>
+
+        </tr>
+    </table>
+
+</div>
+<input type="button" value="+" onclick="addRow();" />
+<input id="minus"  type="button" value="-" onclick="deleteRow();" />
+<div>
+</div>
+<p id="quantumParagraph" hidden>Quantum:
+    <input style="width: 50px;" id="quantum" type="text" value="3" />
+</p>
+<input type="button" value="Go" onclick="draw();" />
+<br/><br/>
+
+<fresh>
+</fresh>
+<p>
+    Timer: <strong id="timer"></strong> sec
+</p>
+
+
+</body>
+</html>
