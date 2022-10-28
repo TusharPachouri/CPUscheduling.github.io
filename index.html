@@ -21,9 +21,9 @@
     <br /><br /><br /><br /><br /><br />
     <div>
       <div>
-        <h2 id="Algo">Algorithms :</h2>
+        <h2 id="Algo">ALGORITHMS :</h2>
         <br />
-        <form id="algorithm">
+        <form id="algorithm" >
           <input id="inp1" type="radio" name="algorithm" value="fcfs" checked />
           First Come First Serve Scheduling<br />
           <input type="radio" name="algorithm" value="sjf" checked /> Shortest
@@ -34,7 +34,7 @@
         </form>
         <br />
       </div>
-      <table id="inputTable">
+      <table id="inputTable" class="tab1">
         <tr>
           <th>Process</th>
           <th>Arrival Time</th>
@@ -53,16 +53,16 @@
           <td><input class="initial exectime" value="3" /></td>
           <td class="servtime">-</td>
         </tr>
-      </table>
+      </table><br>
     </div>
-    <input type="button" value="+" onclick="addRow();" />
+    <input type="button" value="+" onclick="addRow();" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input id="minus" type="button" value="-" onclick="deleteRow();" />
-    <div></div>
+    <div></div><br>
     <p id="quantumParagraph" hidden>
       Quantum:
       <input style="width: 50px" id="quantum" type="text" value="3" />
     </p>
-    <input type="button" value="Go" onclick="draw();" />
+    <input type="button" value="Solution" onclick="draw();" />
     <br /><br />
 
     <fresh> </fresh>
@@ -118,7 +118,7 @@
     <br /><br /><br /><br />
     <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
       <div class="container text-center">
-        <p>Copyright &copy; CPU Scheduling</p>
+        <p>Copyright &copy; CPU Scheduling By Tushar Pachouri</p>
       </div>
     </footer>
   </body>
